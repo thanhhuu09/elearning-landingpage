@@ -1,0 +1,60 @@
+const courses = [
+  {
+    id: 1,
+    title: "The Complete JavaScript Course 2023: From Zero to Expert!",
+    category: "Web Development",
+    price: "$ 500",
+    rating: 4,
+    linkImage: "https://img-b.udemycdn.com/course/750x422/851712_fc61_6.jpg",
+  },
+  {
+    id: 2,
+    title: "The Complete 2023 Web Development Bootcamp",
+    category: "Web Development",
+    price: "$ 400",
+    rating: 5,
+    linkImage: "https://img-b.udemycdn.com/course/750x422/1565838_e54e_16.jpg",
+  },
+  {
+    id: 3,
+    title: "iOS & Swift - The Complete iOS App Development Bootcamp",
+    category: "Mobile Development",
+    price: "$ 200",
+    rating: 5,
+    linkImage: "https://img-b.udemycdn.com/course/750x422/1778502_f4b9_12.jpg",
+  },
+  {
+    id: 4,
+    title: "Flutter & Dart - The Complete Guide [2023 Edition]",
+    category: "Mobile Development",
+    price: "$ 100",
+    rating: 4,
+    linkImage: "https://img-c.udemycdn.com/course/750x422/1708340_7108_5.jpg",
+  },
+  {
+    id: 5,
+    title: "Understanding TypeScript",
+    category: "Web Development",
+    price: "$ 250",
+    rating: 4,
+    linkImage: "https://i.ytimg.com/vi/gs0lpdB9okM/maxresdefault.jpg",
+  },
+  {
+    id: 6,
+    title: "Adobe Illustrator CC - Essentials Training Course",
+    category: "Design",
+    price: "$ 250",
+    rating: 4,
+    linkImage: "https://img-c.udemycdn.com/course/750x422/1452908_8741_4.jpg",
+  },
+  {
+    id: 7,
+    title: "Figma UI UX Design Essentials",
+    category: "Design",
+    price: "$ 280",
+    rating: 5,
+    linkImage: "https://i.ytimg.com/vi/kbZejnPXyLM/maxresdefault.jpg",
+  },
+];
+
+export default courses;
