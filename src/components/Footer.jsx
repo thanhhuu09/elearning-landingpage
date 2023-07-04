@@ -10,8 +10,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full p-24">
-      <div className="grid grid-cols-6 gap-11 max-w-screen-xl mx-auto ">
+    <footer className="w-full">
+      <div className="grid md:grid-cols-6 gap-11 max-w-screen-xl mx-auto px-4 py-10 md:p-24">
         <div className="col-span-2">
           <img className="cursor-pointer" src="logo.svg" alt="logo" />
           <div className="mt-6 flex flex-col gap-4">
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         <div className="col-span-2">
           <h1 className="text-2xl font-medium">Subscribe</h1>
-          <p className="font-normal text-[#6D737A] text-base mt-6">
+          <p className="font-normal text-[#6D737A] text-base md:mt-6">
             Lorem Ipsum has been them an industry printer took a galley make
             book.
           </p>
@@ -71,7 +71,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="rounded-lg bg-[#20B486] px-8 py-3 text-white w-fit"
+              className="rounded-lg bg-[#20B486] px-8 py-3 text-white w-full md:w-fit"
             >
               Subscribe Now
             </button>

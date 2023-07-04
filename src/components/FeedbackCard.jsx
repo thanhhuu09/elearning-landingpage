@@ -3,7 +3,7 @@ import { quotationMark } from "../assets/";
 
 const FeedbackCard = ({ avatar }) => {
   return (
-    <div className="border bg-white drop-shadow-lg p-8 rounded-3xl m-6 mt-0">
+    <div className="border bg-white drop-shadow-lg p-8 rounded-3xl m-3 md:m-6 mt-0">
       <div className="flex items-center gap-3 relative">
         <img className="rounded-full h-16 w-16" src={avatar} alt="Customer" />
         <div className="w-full">

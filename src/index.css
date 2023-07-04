@@ -12,6 +12,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+.slick-arrow,
+.slick-prev {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+}
+
 .slick-prev::before,
 .slick-next::before {
   color: black;
