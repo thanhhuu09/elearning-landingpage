@@ -3,7 +3,7 @@ import StarRating from "./StarRating";
 
 const Card = ({ title, category, price, rating, linkImage }) => {
   return (
-    <div className="cursor-pointer rounded-3xl bg-white drop-shadow-sm mr-5 my-5">
+    <div className="my-5 mr-5 cursor-pointer rounded-3xl bg-white drop-shadow-sm">
       <div className="p-4">
         <div className="relative">
           <img
@@ -11,7 +11,7 @@ const Card = ({ title, category, price, rating, linkImage }) => {
             src={linkImage}
             alt="course"
           />
-          <p className="absolute top-2 left-2 bg-white/90	 px-3 py-1 rounded-md font-medium">
+          <p className="absolute left-2 top-2 rounded-md bg-white/90 px-3 py-1 font-medium">
             {category}
           </p>
         </div>

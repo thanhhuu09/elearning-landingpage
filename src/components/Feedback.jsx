@@ -1,6 +1,6 @@
 import React from "react";
 import FeedbackCard from "./FeedbackCard";
-import { avatar, quotationMark, avatar2 } from "../assets/";
+import { avatar, avatar2 } from "../assets/";
 import Slider from "react-slick";
 
 const Feedback = () => {
@@ -39,11 +39,11 @@ const Feedback = () => {
 
   return (
     <section>
-      <div className="flex flex-col py-36 m-auto max-w-screen-sm md:max-w-screen-xl px-4">
-        <h1 className="font-semibold text-[40px]">
+      <div className="m-auto flex flex-col px-4 py-24 md:max-w-screen-xl">
+        <h1 className="text-4xl font-semibold">
           Student <span className="text-[#20B486]">Feedback</span>
         </h1>
-        <p className="font-normal text-[#6D737A] text-xl mb-12">
+        <p className="mb-12 text-xl font-normal text-[#6D737A]">
           Various versions have evolved over the years, sometimes by accident,
         </p>
         <div>

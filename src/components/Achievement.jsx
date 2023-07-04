@@ -1,49 +1,65 @@
 import React from "react";
 import { achievement } from "../assets";
+
 import {
-  AcademicCapIcon,
-  VideoCameraIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/outline";
+  GraduationCap,
+  Student,
+  VideoCamera,
+  UsersThree,
+} from "@phosphor-icons/react";
 
 const Achievement = () => {
   return (
     <section>
-      <div className="flex flex-col mx-auto items-center max-w-screen-sm md:max-w-screen-xl md:flex-row py-24">
+      <div className="mx-auto flex max-w-screen-sm flex-col items-center px-4 py-24 md:max-w-screen-xl md:flex-row">
         <div className="flex flex-col md:w-2/3 ">
-          <h1 className="text-4xl md:text-5xl font-semibold">
+          <h1 className="text-4xl font-semibold md:text-5xl">
             Our <span className="text-[#20B486]">Achievement</span>
           </h1>
-          <p className="font-normal text-base md:text-xl text-[#6D737A] mt-4">
+          <p className="mt-4 text-base font-normal text-[#6D737A] md:text-xl">
             Various versions have evolved over the years, sometimes by accident,
           </p>
-          <div className="grid grid-cols-2 grid-rows-2 gap-y-14 mt-10 md:mt-20">
+          <div className="auto mt-10 grid grid-cols-2 gap-y-14 md:mt-20">
             <div className="flex items-center gap-4">
-              <AcademicCapIcon className="h-14 w-14 bg-green-600/10 text-green-500 p-2 rounded-lg" />
+              <GraduationCap
+                weight="thin"
+                className="h-14 w-14 rounded-lg bg-green-600/10 p-2 text-green-500"
+              />
               <div className="flex flex-col gap-1">
-                <h2 className="text-2xl font-semibold">300</h2>
-                <p className="font-light text-lg">Instructor</p>
+                <h2 className="text-xl font-semibold md:text-2xl">300</h2>
+                <p className="text-lg font-light">Instructor</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <VideoCameraIcon className="h-14 w-14 bg-orange-500/10 text-orange-500 p-2 rounded-lg" />
+              <VideoCamera
+                weight="thin"
+                className="h-14 w-14 rounded-lg bg-orange-500/10 p-2 text-orange-500"
+              />
               <div className="flex flex-col gap-1">
-                <h2 className="text-2xl font-semibold">10,000+</h2>
-                <p className="font-light text-xl">Video</p>
+                <h2 className="text-xl font-semibold md:text-2xl">10,000+</h2>
+                <p className="text-xl font-light">Video</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <AcademicCapIcon className="h-14 w-14 bg-[#FFEEF0] text-red-500 p-2 rounded-lg" />
+              <Student
+                weight="thin"
+                className="h-14 w-14 rounded-lg bg-[#FFEEF0] p-2 text-red-500"
+              />
               <div className="flex flex-col gap-1">
-                <h2 className="text-2xl font-semibold">20,000+</h2>
-                <p className="font-light text-lg">Student</p>
+                <h2 className="text-xl font-semibold md:text-2xl">20,000+</h2>
+                <p className="text-lg font-light">Student</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <UserGroupIcon className="h-14 w-14 bg-[#F0F7FF] text-[#0075FD] p-2 rounded-lg" />
+              <UsersThree
+                weight="thin"
+                className="h-14 w-14 rounded-lg bg-[#F0F7FF] p-2 text-[#0075FD]"
+              />
               <div className="flex flex-col gap-1">
-                <h2 className="text-2xl font-semibold">1,000,000+</h2>
-                <p className="font-light text-lg">User's</p>
+                <h2 className="text-xl font-semibold md:text-2xl">
+                  1,000,000+
+                </h2>
+                <p className="text-lg font-light">User</p>
               </div>
             </div>
           </div>

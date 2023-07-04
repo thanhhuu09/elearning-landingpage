@@ -37,13 +37,13 @@ const Courses = () => {
     ],
   };
   return (
-    <section className="w-full bg-[#f0faf7] py-24">
-      <div className="flex-col gap-4 m-auto px-12 max-w-screen-sm md:max-w-screen-xl">
+    <section className="bg-[#f0faf7]">
+      <div className="m-auto max-w-screen-sm flex-col gap-4 px-4 py-24 md:max-w-screen-xl">
         <div className="m-auto max-w-screen-xl">
-          <h1 className="font-medium text-4xl md:text-5xl">
+          <h1 className="text-4xl font-medium">
             Most Popular <span className="text-[#20B486]">Courses</span>
           </h1>
-          <p className="font-normal text-base md:text-xl text-[#6D737A] my-4">
+          <p className="my-4 text-xl font-normal text-[#6D737A]">
             Various versions have evolved over the years, sometimes by accident,
           </p>
           <div>

@@ -19,28 +19,24 @@ const Navbar = () => {
     return menuItems.map((item, index) => (
       <li
         key={index}
-        className="md:cursor-pointer p-4 hover:bg-gray-100 cursor-pointer"
+        className="cursor-pointer p-4 hover:bg-gray-100 md:cursor-pointer"
       >
         <a href={item.link}>{item.label}</a>
       </li>
     ));
   };
   return (
-    <nav>
-      <div className="m-auto max-w-screen-sm md:max-w-screen-xl bg-white">
-        <div
-          className={`flex items-center justify-between py-6 mx-4 ${
-            !toggle && "border-b-2"
-          }`}
-        >
+    <nav className="border-b-2">
+      <div className="m-auto bg-white md:max-w-screen-xl">
+        <div className="mx-4 flex items-center justify-between py-6">
           <div className="cursor-pointer">
             <img src="logo.svg" alt="" />
           </div>
           <div>
-            <ul className="hidden md:flex gap-5">{renderMenuItems()}</ul>
+            <ul className="hidden gap-5 md:flex">{renderMenuItems()}</ul>
           </div>
 
-          <div className="hidden md:flex items-center gap-5 ">
+          <div className="hidden items-center gap-5 md:flex ">
             <button className="flex gap-2">
               <img src={lockIcon} alt="" />
               Login
@@ -54,17 +50,17 @@ const Navbar = () => {
           </div>
         </div>
         {toggle && (
-          <div className="md:hidden bg-white px-4 absolute z-10 start-0 end-0">
-            <ul className="border-b-2 pb-4">
+          <div className="absolute end-0 start-0 z-10 border-b-2 bg-white px-4 pb-4 md:hidden">
+            <ul>
               {renderMenuItems()}
               <li className="mb-4">
-                <button className="flex gap-2 p-4 w-full justify-center border rounded-lg">
+                <button className="flex w-full justify-center gap-2 rounded-lg border p-4">
                   <img src={lockIcon} alt="Lock Icon" />
                   Login
                 </button>
               </li>
               <li>
-                <button className="rounded-lg bg-[#20B486] p-4 text-white w-full">
+                <button className="w-full rounded-lg bg-[#20B486] p-4 text-white">
                   Sign up for Free
                 </button>
               </li>
