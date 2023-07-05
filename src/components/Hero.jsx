@@ -4,8 +4,8 @@ import heroImg from "../assets/heroImg.png";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center">
-      <div className="grid px-4 py-20 md:max-w-screen-xl md:grid-cols-2">
+    <section>
+      <div className="m-auto grid px-4 py-20 md:max-w-screen-xl md:grid-cols-2">
         <div className="text-center md:text-left">
           <p className="py-4 text-2xl font-semibold text-[#20B486] md:text-3xl">
             START TO SUCCESS

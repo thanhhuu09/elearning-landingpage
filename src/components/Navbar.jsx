@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import lockIcon from "../assets/lock.svg";
 import { hamburgerMenu, close } from "../assets";
 
@@ -30,20 +32,26 @@ const Navbar = () => {
       <div className="m-auto bg-white md:max-w-screen-xl">
         <div className="mx-4 flex items-center justify-between py-6">
           <div className="cursor-pointer">
-            <img src="logo.svg" alt="" />
+            <a href="/">
+              <img src="logo.svg" alt="" />
+            </a>
           </div>
           <div>
             <ul className="hidden gap-5 md:flex">{renderMenuItems()}</ul>
           </div>
 
           <div className="hidden items-center gap-5 md:flex ">
-            <button className="flex gap-2">
-              <img src={lockIcon} alt="" />
-              Login
-            </button>
-            <button className="rounded-lg bg-[#20B486] px-8 py-3 text-white">
-              Sign up for Free
-            </button>
+            <Link to="/login">
+              <button className="flex gap-2">
+                <img src={lockIcon} alt="" />
+                Login
+              </button>
+            </Link>
+            <Link to="/register">
+              <button className="rounded-lg bg-[#20B486] px-8 py-3 text-white">
+                Sign up for Free
+              </button>
+            </Link>
           </div>
           <div className="md:hidden" onClick={handleClick}>
             <img src={toggle ? close : hamburgerMenu} alt="Hamburger Menu" />
@@ -54,15 +62,19 @@ const Navbar = () => {
             <ul>
               {renderMenuItems()}
               <li className="mb-4">
-                <button className="flex w-full justify-center gap-2 rounded-lg border p-4">
-                  <img src={lockIcon} alt="Lock Icon" />
-                  Login
-                </button>
+                <Link to="/login">
+                  <button className="flex w-full justify-center gap-2 rounded-lg border p-4">
+                    <img src={lockIcon} alt="Lock Icon" />
+                    Login
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="w-full rounded-lg bg-[#20B486] p-4 text-white">
-                  Sign up for Free
-                </button>
+                <Link to="/register">
+                  <button className="w-full rounded-lg bg-[#20B486] p-4 text-white">
+                    Sign up for Free
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>

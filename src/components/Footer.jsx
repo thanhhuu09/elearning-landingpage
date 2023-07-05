@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
-    <footer className="">
+    <footer>
       <div className="mx-auto grid max-w-screen-xl gap-11 px-4 pb-4 pt-24 md:grid-cols-6">
         <div className="col-span-2">
           <img className="cursor-pointer" src="logo.svg" alt="logo" />
